@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bg {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("images/prepage.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button.go {
+    /* Dimensions & Spacing */
+    padding: 30px 150px;
+    font-size: 10em;
+    font-weight: bold;
+    top: 170%;
+    margin-top: 500px;
+
+    /* Shape & Borders */
+    border: 2px solid red;
+    border-radius: 150px; /* Fully curved sides */
+    
+    /* Colors */
+    background-color: #ffffff;
+    color: #333333;
+    cursor: pointer;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+
+    /* Smooth transition for both hovering and un-hovering */
+    transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+/* Hover State */
+button.go:hover {
+    background-color: #ff3333; /* Red background on hover */
+    color: #ffffff;            /* White text on hover */
+    transform: scale(1.05);    /* Optional subtle scale boost */
+}

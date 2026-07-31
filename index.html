@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Girlfriend's Day</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="slider-wrapper">
+        <!-- FIRST SLIDE -->
+        <div class="homecontainer">
+            <img class="home" src="images/WhatsAppImage2026-08-01at02.13.16.png">
+            <button class="home" id="slideBtn">&lt;3</button>
+            <img class="home" src="images/WhatsAppImage2026-08-01at02.14.09.png">
+        </div>
+
+        <!-- SECOND SLIDE -->
+        <div class="slide2">
+
+            <img class="sticker" src="images/WhatsAppImage2026-08-01at03.27.27.png" alt="">
+            <img class="sticker" src="images/WhatsAppImage2026-08-01at03.27.28.png" alt="">
+            <img class="sticker" src="images/WhatsAppImage2026-08-01at03.27.271.png" alt="">
+            <img class="sticker" src="images/WhatsAppImage2026-08-01at03.27.281.png" alt="">
+            <img class="sticker" src="images/WhatsAppImage2026-08-01at03.27.29.png" alt="">
+            <img class="sticker" src="images/WhatsAppImage2026-08-01at04.18.29.png" alt="">
+
+            <div class="text-wrapper">
+                <h2>To my lovely girlfren &lt;3</h2>
+                <p>I wish a Happy Girlfriend's Day. You are the most favourite person in my life, my day lights up when I'm with you, either through text, calls or in person, my day just isn't the same without you. Forever grateful to have you these past 6 months and not to jinx stuff but I hope for more of those. You are the most capable, smartest, funniest, prettiest, hottest and the most fun girlfriend ever, I can't get enough of you. I have a lot of fantasies (wholesome ones) with you and would love to make em come true because you mean that much to me. You deserve the WORLD. I feel very very lucky to be your boyfriend and your friend. Every mini date on discord or on our phone is very special to me as well, and meeting you in person is the favorite time of my week. On that note I hope you had a good sleep, <br> Love you Meri Jaan &lt;3
+                <br>
+                <strong>Your boyfren, Alien</strong></p>
+                <button id="backBtn"><b>↑</b></button>
+            </div>
+        </div>
+    </main>
+
+    <script>
+document.addEventListener('DOMContentLoaded', () => {
+    const btn = document.getElementById('slideBtn');
+    const backBtn = document.getElementById('backBtn');
+    const wrapper = document.querySelector('.slider-wrapper');
+
+    console.log({ btn, backBtn, wrapper }); // check console: any of these null?
+
+    btn?.addEventListener('click', () => {
+        console.log('down clicked');
+        wrapper.classList.add('slide-up');
+    });
+
+    backBtn?.addEventListener('click', () => {
+        console.log('back clicked');
+        wrapper.classList.remove('slide-up');
+    });
+});
+</script>
+</body>
+</html>
