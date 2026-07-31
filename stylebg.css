@@ -17,30 +17,27 @@
 }
 
 button.go {
-    /* Dimensions & Spacing */
-    padding: 30px 150px;
-    font-size: 10em;
+    /* Dimensions & Spacing — scales with viewport, capped so it never gets absurd */
+    padding: clamp(16px, 2.5vw, 30px) clamp(40px, 8vw, 100px);
+    font-size: clamp(1.5rem, 5vw, 3.5rem);
     font-weight: bold;
-    top: 170%;
-    margin-top: 500px;
+    max-width: 80vw;
 
     /* Shape & Borders */
     border: 2px solid red;
-    border-radius: 150px; /* Fully curved sides */
-    
+    border-radius: 150px;
+
     /* Colors */
     background-color: #ffffff;
     color: #333333;
     cursor: pointer;
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
 
-    /* Smooth transition for both hovering and un-hovering */
     transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
 }
 
-/* Hover State */
 button.go:hover {
-    background-color: #ff3333; /* Red background on hover */
-    color: #ffffff;            /* White text on hover */
-    transform: scale(1.05);    /* Optional subtle scale boost */
+    background-color: #ff3333;
+    color: #ffffff;
+    transform: scale(1.05);
 }
