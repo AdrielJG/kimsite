@@ -83,7 +83,7 @@ img.home:hover {
 
 button.home {
     position: absolute;
-    bottom: 20%;              /* lower, clear of the badge point */
+    bottom: 15%;              /* lower, clear of the badge point */
     left: 50%;
     transform: translateX(-50%);
     z-index: 2;
@@ -92,7 +92,7 @@ button.home {
     color: #9b6bd6;
     border: none;
     border-radius: 100px;
-    width: 300px;
+    width: 200px;
     max-width: 70vw;
     height: 90px;
     max-height: 9vh;
