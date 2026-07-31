@@ -59,7 +59,7 @@ body {
 img.home {
     position: absolute;
     bottom: 0;
-    height: 60vh;           /* smaller than 78vh so it doesn't run into the badge/toolbar */
+    height: 52vh;           /* smaller still, gives more clearance top and bottom */
     width: auto;
     object-fit: contain;
     z-index: 1;
@@ -70,7 +70,7 @@ img.home {
 }
 
 img.home:nth-of-type(1) {
-    left: 4%;               /* pulled in from the edge slightly, matches target */
+    left: 4%;
 }
 
 img.home:nth-of-type(2) {
@@ -83,7 +83,7 @@ img.home:hover {
 
 button.home {
     position: absolute;
-    bottom: 8%;              /* lower than 15%, giving more gap below the badge */
+    bottom: 4%;              /* lower, clear of the badge point */
     left: 50%;
     transform: translateX(-50%);
     z-index: 2;
@@ -92,11 +92,11 @@ button.home {
     color: #9b6bd6;
     border: none;
     border-radius: 100px;
-    width: 500px;             /* smaller than 800px so it doesn't crowd the photos */
+    width: 500px;
     max-width: 70vw;
-    height: 100px;
-    max-height: 10vh;
-    font-size: 3rem;
+    height: 90px;
+    max-height: 9vh;
+    font-size: 2.6rem;
     font-weight: bold;
     cursor: pointer;
     box-shadow: 0 4px 12px rgba(0,0,0,0.25);
