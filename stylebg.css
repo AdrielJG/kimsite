@@ -1,9 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 .bg {
     width: 100vw;
     height: 100vh;
@@ -12,9 +6,10 @@
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
-    justify-content: flex-end;   /* anchor to bottom instead of dead-center */
-    align-items: center;
-    padding-bottom: 8vh;         /* fine-tune this to sit right below the image's text */
+    flex-direction: column;    /* stack vertically so justify-content = up/down */
+    justify-content: flex-end; /* now correctly pushes to the bottom */
+    align-items: center;       /* keeps it horizontally centered */
+    padding-bottom: 8vh;
 }
 
 button.go {
