@@ -59,7 +59,7 @@ body {
 img.home {
     position: absolute;
     bottom: 0;
-    height: 70vh;           /* smaller still, gives more clearance top and bottom */
+    height: 80vh;           /* smaller still, gives more clearance top and bottom */
     width: auto;
     object-fit: contain;
     z-index: 1;
