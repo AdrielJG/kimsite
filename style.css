@@ -59,7 +59,7 @@ body {
 img.home {
     position: absolute;
     bottom: 0;
-    height: 52vh;           /* smaller still, gives more clearance top and bottom */
+    height: 60vh;           /* smaller still, gives more clearance top and bottom */
     width: auto;
     object-fit: contain;
     z-index: 1;
@@ -70,11 +70,11 @@ img.home {
 }
 
 img.home:nth-of-type(1) {
-    left: 4%;
+    left: 0%;
 }
 
 img.home:nth-of-type(2) {
-    right: 4%;
+    right: 0%;
 }
 
 img.home:hover {
