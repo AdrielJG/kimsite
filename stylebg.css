@@ -12,27 +12,23 @@
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;   /* anchor to bottom instead of dead-center */
     align-items: center;
+    padding-bottom: 8vh;         /* fine-tune this to sit right below the image's text */
 }
 
 button.go {
-    /* Dimensions & Spacing — scales with viewport, capped so it never gets absurd */
     padding: clamp(16px, 2.5vw, 30px) clamp(40px, 8vw, 100px);
     font-size: clamp(1.5rem, 5vw, 3.5rem);
     font-weight: bold;
     max-width: 80vw;
 
-    /* Shape & Borders */
     border: 2px solid red;
     border-radius: 150px;
-
-    /* Colors */
     background-color: #ffffff;
     color: #333333;
     cursor: pointer;
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
-
     transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
 }
 
