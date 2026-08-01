@@ -175,7 +175,7 @@ button.home:hover {
 .slide2 .sticker {
     position: absolute;
     z-index: 6;
-    width: clamp(90px, 14vw, 180px);   /* was up to 1700px */
+    width: clamp(120px, 18vw, 240px);   /* was up to 1700px */
     height: auto;
     filter: drop-shadow(5px 0px 0px #fff) 
             drop-shadow(-5px 0px 0px #fff) 
@@ -218,7 +218,6 @@ button.home:hover {
     top: 100%;
     right: 1%;
     transform: rotate(-9deg);
-    width: 40%;
 }
 
 @media (max-width: 700px) {
