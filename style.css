@@ -197,25 +197,25 @@ button.home:hover {
 }
 
 .slide2 .sticker:nth-of-type(3) {
-    top: 38%;
+    top: 42%;
     left: 1%;
     transform: rotate(13deg);
 }
 
 .slide2 .sticker:nth-of-type(4) {
-    bottom: 2%;
+    top: 40%;
     right: 2%;
     transform: rotate(-14deg);
 }
 
 .slide2 .sticker:nth-of-type(5) {
-    bottom: 2%;
+    top: 60%;
     left: 2%;
     transform: rotate(-10deg);
 }
 
 .slide2 .sticker:nth-of-type(6) {
-    top: 140%;
+    top: 100%;
     right: 1%;
     transform: rotate(-9deg);
 }
