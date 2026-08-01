@@ -175,19 +175,18 @@ button.home:hover {
 .slide2 .sticker {
     position: absolute;
     z-index: 6;
-    width: clamp(120px, 18vw, 240px);   /* was up to 1700px */
+    width: clamp(120px, 18vw, 240px);
     height: auto;
     filter: drop-shadow(5px 0px 0px #fff) 
             drop-shadow(-5px 0px 0px #fff) 
             drop-shadow(0px 5px 0px #fff) 
             drop-shadow(0px -5px 0px #fff);
     transition: transform 0.2s ease;
-    transform: rotate(var(--rot, 0deg));
+    transform: rotate(var(--rot, 0deg)) translateY(var(--ty, 0));
 }
 
 .slide2 .sticker:hover {
-    transform: scale(1.1);
-    transform: rotate(var(--rot, 0deg)) scale(1.1);
+    transform: rotate(var(--rot, 0deg)) translateY(var(--ty, 0)) scale(1.1);
 }
 
 .slide2 .sticker:nth-of-type(1) {
@@ -205,7 +204,8 @@ button.home:hover {
 .slide2 .sticker:nth-of-type(3) {
     top: 48%;
     left: 1%;
-    --rot: 13deg; transform: rotate(var(--rot)) translateY(-50%);
+    --rot: 13deg;
+    --ty: -50%;
 }
 
 .slide2 .sticker:nth-of-type(4) {
@@ -215,15 +215,16 @@ button.home:hover {
 }
 
 .slide2 .sticker:nth-of-type(5) {
-    top: 100%;
+    bottom: 2%;
     left: 2%;
     --rot: -10deg;
 }
 
 .slide2 .sticker:nth-of-type(6) {
-    top: 120%;
+    top: 65%;
     right: 1%;
-    --rot: -9deg; transform: rotate(var(--rot)) translateY(-50%);
+    --rot: -9deg;
+    --ty: -50%;
 }
 
 @media (max-width: 700px) {
