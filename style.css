@@ -193,37 +193,37 @@ button.home:hover {
 .slide2 .sticker:nth-of-type(1) {
     top: 2%;
     left: 2%;
-    transform: rotate(-17deg);
+    --rot: -17deg;
 }
 
 .slide2 .sticker:nth-of-type(2) {
     top: 5%;
     right: 2%;
-    transform: rotate(15deg);
+    --rot: 15deg;
 }
 
 .slide2 .sticker:nth-of-type(3) {
     top: 48%;
     left: 1%;
-    transform: rotate(13deg);
+    --rot: 13deg; transform: rotate(var(--rot)) translateY(-50%);
 }
 
 .slide2 .sticker:nth-of-type(4) {
     top: 40%;
     right: 2%;
-    transform: rotate(-14deg);
+    --rot: -14deg;
 }
 
 .slide2 .sticker:nth-of-type(5) {
     top: 100%;
     left: 2%;
-    transform: rotate(-10deg);
+    --rot: -10deg;
 }
 
 .slide2 .sticker:nth-of-type(6) {
     top: 120%;
     right: 1%;
-    transform: rotate(-9deg);
+    --rot: -9deg; transform: rotate(var(--rot)) translateY(-50%);
 }
 
 @media (max-width: 700px) {
