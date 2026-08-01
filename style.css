@@ -216,13 +216,13 @@ button.home:hover {
 }
 
 .slide2 .sticker:nth-of-type(4) {
-    top: 110%;
+    top: 100%;
     right: 2%;
     --rot: -14deg;
 }
 
 .slide2 .sticker:nth-of-type(5) {
-    top: 100%;
+    top: 110%;
     left: 2%;
     --rot: -10deg;
 }
