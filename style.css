@@ -222,7 +222,7 @@ button.home:hover {
 }
 
 .slide2 .sticker:nth-of-type(5) {
-    top: 110%;
+    top: 100%;
     left: 2%;
     --rot: -10deg;
 }
