@@ -121,13 +121,12 @@ button.home:hover {
 .slide2 {
     position: relative;
     width: 100%;
-    min-height: 100vh;
-    height: auto;
+    height: 100vh;          /* fixed to viewport height instead of auto */
     background-image: url('images/niklas-liniger-cof4T9UkGlE-unsplash.jpg');
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
-    overflow-y: auto;
+    overflow-y: auto;       /* now this actually has room to scroll within */
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
